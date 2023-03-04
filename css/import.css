@@ -1,0 +1,53 @@
+.btn-57 {
+    -webkit-tap-highlight-color: transparent;
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: rgb(247, 194, 19);
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 0;
+    mask-image: -webkit-radial-gradient(#000,rgb(247, 194, 19));
+    padding: 0;
+  }
+  .btn-57:disabled {
+    cursor: default;
+  }
+  .btn-57:-moz-focusring {
+    outline: auto;
+  }
+  .btn-57 svg {
+    display: block;
+    align-items: middle;
+  }
+  .btn-57 [hidden] {
+    display: none;
+  }
+  .btn-57 {
+    background: none;
+    border: 3px solid;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+    font-weight: 800;
+    mask-image: none;
+    padding: 20px 40px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .btn-57:before {
+    background: rgb(247, 194, 19);
+    border-radius: 999px;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: translate(10px, 10px);
+    transition: transform 0.2s;
+    z-index: -1;
+  }
+  .btn-57:hover:before {
+    transform: translate(0);
+  }
+  

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/dinpro-medium');
+*, *::before, *::after {
+    box-sizing: border-box;
+   }
+
+body {
+    /* height: 100vh; */
+    margin: 0;
+    background-color: yellow;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(to top,rgb(248, 217, 115) 20%,rgb(17, 21, 24) 90%);
+}
+section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jumbotron{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    color: white;
+    background-color: rgb(241, 195, 43);
+    background-repeat: no-repeat;
+    background-image: url(https://www.kyrosports.com/wp-content/uploads/2020/06/0-2.jpg);
+    background-size: 100%;
+    background-blend-mode: multiply;
+}
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 1rem;
+}
+.jumbotron h1{
+    font-size: 12rem;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.jumbotron h4{
+    margin-top: 0;
+    font-size: 4rem;
+    text-align: center;
+}
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header .navbar-container {
+    width: 101.5%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(17, 21, 24);
+    height: 6rem;
+}
+header .navbar-container .logo img{
+    margin: 20px 120px 20px 0px;
+    padding: 0;
+    width: 35%;
+    padding-top: 9%;
+}
+header .navbar-container .navbar ul{
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+header .navbar-container .navbar li{
+    list-style-type: none;
+    margin: 10px 0px 0px 0px;
+}
+header .navbar-container .navbar li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 204, 64);
+    padding: 1rem 1rem;
+    border-radius: 999px;
+    transition: all 0.6s ease-in-out;
+}
+header .navbar-container .navbar li:hover a{
+    background-color: rgb(255, 204, 64);
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+header .navbar-container .navbar .visited {
+    color: black;
+    border-radius: 999px;
+    background-color: rgb(252, 185, 0);
+    
+}
+main {
+    width: 100%;
+    margin-inline: auto;
+    margin: 5% 0 0 0;
+    padding: 1em 4em;
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .description {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+main .description .content-description{
+    flex: 1 1;
+}
+main .description .content-description .title{
+    flex: 1 1;
+    font-size: 4rem;
+    margin-block: 1rem;
+}
+main .description .content-description p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+main .description .content-description a{
+    text-decoration: none;
+}
+main .description .content-img{
+    flex:0.95;
+    display: flex;
+    margin-top: 60px; 
+}
+main .description .content-img img{
+    margin: auto;
+    min-width: 250px;
+    width: 60%;
+}
+main .team {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    padding: 0;
+}
+main .team .title {
+    font-size: 3em;
+    margin: 0.5em 0;
+    padding: 0;
+}
+main .team .content-team {
+    width: 86em;
+    margin: 0 auto;
+    height: 550px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: scroll;
+}
+::-webkit-scrollbar{
+    width: 10%;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(248, 217, 115,0);
+}
+main .team .content-team .player{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 1.3em;
+    justify-content: center;
+    align-items: center;
+}
+main .team .content-team .player img{
+    flex: 5;
+    margin: 60px 0 0 0;
+    width: 300px;
+}
+main .team .content-team .player p{
+    flex: 1;
+    font-family: 'DINPro-Medium', sans-serif;
+    font-size: 1.6em;
+    margin: 0.5em 0;
+    align-self: center;
+    text-shadow: 1px 3px 2px rgba(255, 255, 255, 1);
+}
+main aside{
+    inset-block: 0;
+    inset-inline-end: 0;
+    position: fixed;
+}
+main aside .side-menu{
+    width: 100%;
+    height: 130%;
+    display: flex
+}
+main aside .side-menu ul{
+    padding: 1rem 0.9rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: rgb(17, 21, 24);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+main aside .side-menu ul li{
+    list-style-type: none;
+}
+main aside .side-menu ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(255, 204, 64);
+    transition: all .4s ease-in-out;
+}
+main aside .side-menu ul li a:hover{
+    color: white;
+}
+footer {
+    width: 101.5%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    padding-block: 2rem;
+}
+footer .social-media{
+    padding-left: 0;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-inline: 5%;
+}
+footer .social-media-description{
+    flex-direction: row;
+}
+footer .social-media-description p{
+    font-size: large;
+}
+footer .social-media-description ul{
+    display: flex;
+    gap: 1rem 2rem;
+    padding-left: 0;
+}
+footer .social-media-description ul li{
+    list-style-type: none;
+}
+footer .social-media-description ul li a{
+    text-decoration: none;
+}
+footer .social-media-description ul li a i{
+    font-size: 2rem;
+}
+footer .social-media .copyright{
+    margin-right: 5%;
+}
+footer .social-media .copyright span{
+    margin-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

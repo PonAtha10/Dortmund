@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css\signup-signin.css">
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <title>LOGIN-BVB</title>
+    </head>
+    <body>
+        <header class="navbar-container">
+            <div class="logo">
+                <a href="landingPage.html"><img src="img\logo.svg" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="BVB.html"><i class="far fa-futbol"></i> BVB</a></li>
+                    <li><a href="team.html"><i class="fas fa-users"></i> Team</a></li>
+                    <li><a href="match.html"><i class="fas fa-gamepad"></i> Match</a></li>
+                    <li><a href="partner.html"><i class="fas fa-handshake"></i> Partner</a></li>
+                    <li style="margin: 0px 0px 0px 90px; justify-content: unset;"><a class="visited" href="login.html" style="padding-top: 2rem;"><i class="fas fa-sign-in-alt" style="font-size: 3rem; flex-grow: 6;"></i></a></li>
+                    <li style="margin: 0px 0px 0px 0px; justify-content: unset;"><a href="login.html" style="padding-top: 2rem;"><i class="fas fa-user-circle" style="font-size: 3rem; flex-grow: 6;"></i></a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container" id="container">
+                <div class="form-container sign-up-container">
+                    <form>
+                        <h1><i class="fas fa-user-plus icon-form"></i> Daftar</h1><br>
+                        <input id="inputNama" type="text" placeholder="Nama" required></input>
+                        <div class="jenis-kelamin">
+                            <div class="option">
+                            <input id="inputGenderL" type="radio" value="Laki-Laki" required>
+                            <label for="inputGenderL" class="choice">Laki-Laki</label>
+                            </div>
+                            <div class="option">
+                            <input id="inputGenderP" type="radio" value="Perempuan" required>
+                            <label for="inputGenderP" class="choice">Perempuan</label>
+                            </div>
+                        </div><br>
+                        <input id="inputTanggalLahir" type="date" placeholder="Tanggal Lahir" required>
+                        <input id="inputEmail" type="email" placeholder="Email" required>
+                        <input id="inputPassword" type="password" placeholder="Password" required><br>
+                        <button onclick="return false;">Daftar</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form>
+                        <h1><i class="fas fa-sign-in-alt icon-form"></i> Masuk</h1><br>
+                        <input id="inputEmail" type="email" placeholder="Email" required>
+                        <input id="inputPassword" type="password" placeholder="Password" required><br>
+                        <button onclick="return false;">Masuk</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                  <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Selamat Datang Kembali!</h1>
+                        <p>Silakan Masuk Menggunakan Akun Pribadi Anda</p>
+                        <button class="ghost" id="signIn">Masuk</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Halo Fans BVB!</h1>
+                        <p>Masukkan Informasi Pribadi dan Jadilah Fans BVB Indonesia</p>
+                        <button class="ghost" id="signUp">Daftar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </main>
+        <script src="js\signin_signup.js"></script>
+    </body>
+</html>
+    

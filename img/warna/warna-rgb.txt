@@ -1,0 +1,6 @@
+rgb(233, 118, 19) orange
+rgb(255, 244, 208) kuning muda
+rgb(255, 179, 0) kuning tua
+rgb(255, 244, 208)kuning abu
+
+<a href='https://postimg.cc/1fPRT4XR' target='_blank'><img src='https://i.postimg.cc/1fPRT4XR/fans-med.jpg' border='0' alt='fans-med'/></a>

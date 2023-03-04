@@ -1,0 +1,53 @@
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 300px;
+    cursor: pointer;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+.card img {
+    position: absolute;
+    margin: 0;
+    width: 300px;
+    background: #FFF;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+.card .back {
+    background: #222;
+    color: #FFF;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+input {
+    display: none;
+}
+label:hover .card {
+    -webkit-transform: rotateY(20deg);
+    transform: rotateY(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+:checked + .card {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+label:hover :checked + .card {
+    transform: rotateY(160deg);
+    -webkit-transform: rotateY(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
